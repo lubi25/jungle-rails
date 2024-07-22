@@ -105,9 +105,39 @@ form.button_to {
   }
 }
 
+.nav-item-user, .nav-item-user a { 
+  color: #91c497;
+  text-decoration: none;
+  padding: 7px 1em 0em 1em;
+}
+
+.nav-item-user a:hover {
+  color: white;
+}
+
 .page-header {
   margin: 3em 0;
 }
 .text-danger {
   color: #f38792 !important;
+}
+
+.user-auth-form-label {
+  display: inline-block;
+  width: 120px;
+  padding-bottom: 20px;
+}
+
+.user-auth-form-button input {
+  width: 140px;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.15em;
+  background-color: rgba(0, 130, 29, 0.7);
+  color: white;
+  font-weight: 700;
+  border: 0px solid;
+  border-radius: 0.25em;
+  margin-top: 1em;
 }
