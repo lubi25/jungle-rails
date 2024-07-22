@@ -1,11 +1,20 @@
 <% if current_user %>
   <p>You are already logged in. <%= link_to 'Logout', '/logout', method: :delete %></p>
 <% else %>
-  <h1>Signup</h1>
+  <header class="page-header">
+    <h1>Sign up</h1>
+  </header>
+
   <%= form_for :user, url: '/users' do |f| %>
-    Name: <%= f.text_field :name %>
-    Email: <%= f.text_field :email %>
-    Password: <%= f.password_field :password %>
-    <%= f.submit "Signup" %>
+    <span class="user-auth-form-label"> Name: </span> 
+    <%= f.text_field :name %> <br>
+
+    <span class="user-auth-form-label"> Email: </span> 
+    <%= f.text_field :email %> <br>
+    
+    <span class="user-auth-form-label"> Password: </span> 
+    <%= f.password_field :password %>
+    
+    <div class="user-auth-form-button"> <%= f.submit "Signup" %> </div>
   <% end %>
 <% end %>
